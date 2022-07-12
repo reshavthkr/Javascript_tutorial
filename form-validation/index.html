@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+            margin: 5px 0px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 5px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This tutorial is for form validation</h1>
+    <form id="myform" onsubmit="validateForm(event)">
+        <input required id="fname" placeholder="Name" type="text" name="fname" value="" />
+        <input required id="email" placeholder="Email" type="email" name="email" value="" />
+        <textarea required id="message" placeholder="Message" value=""></textarea>
+        <input type="submit" name="Submit Detail">
+    </form>
+    <div>
+        <h1>You name is <span id="span_name"></span></h1>
+        <h1>You email is <span id="span_email"></span></h1>
+        <h1>You message is <span id="span_message"></span></h1>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.skill_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill_main_sec {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.skill_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    width: 100px;
+}
+
+.abc {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.abc span {
+    width: 100px;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+}
+
+.dgrid {
+    width: 100vw;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

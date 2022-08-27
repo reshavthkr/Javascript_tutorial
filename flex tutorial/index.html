@@ -7,12 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
+    <header>
+        <p id="skillBtn">h31</p>
+        <p id="educationBtn">h32</p>
+        <p id="projectBtn">h33</p>
+    </header>
     <section class="skill_section">
         <h1>Skills</h1>
-        <h3>Display flex 1</h3>
+        <h3 id="skills">Display flex 1</h3>
         <div class="skill_main_sec">
             <div class="skill_container">
                 <img class="img" src="./html-5.png" alt="" srcset="">
@@ -27,7 +34,7 @@
                 <p>Javascript</p>
             </div>
         </div>
-        <h3>Display flex 2</h3>
+        <h3 id="education">Display flex 2</h3>
         <div>
             <div class="abc">
                 <img class="img" src="./html-5.png" alt="" srcset="">
@@ -40,7 +47,7 @@
                 <span>Javascript</span>
             </div>
         </div>
-        <h3>Display grid</h3>
+        <h3 id="projects">Display grid</h3>
         <div class="dgrid">
             <!-- row 1 -->
             <img class="img" src="./html-5.png" alt="" srcset="">
@@ -53,6 +60,7 @@
             <p>Javascript</p>
         </div>
     </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -43,3 +43,45 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header p {
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#skills {
+    margin-top: 200px;
+}
+
+#education {
+    margin-top: 200px;
+}
+
+#projects {
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .skill_main_sec {
+        flex-direction: column;
+    }
+
+    .dgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* @media only screen and (min-width: 601px) {
+    .dgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */

@@ -1,0 +1,57 @@
+:root {
+    --color-primary: #4d4dff;
+    --color-dark: #3655b3;
+    --color-background: #d3deff;
+    --color-blue-light: #a6bcff;
+    --color-text: #fff;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins';
+}
+
+/* navbar styling */
+.flex_evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar {
+    width: 100vw;
+    padding: 0px 100px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50%;
+}
+
+.links {
+    width: 50%;
+}
+
+.link_item {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'poppins-bold';
+    letter-spacing: 2.5px;
+    color: rgb(91, 91, 91)
+}
+
+.link_item:hover {
+    color: var(--color-dark);
+    border-bottom: 3px solid var(--color-dark);
+}

@@ -29,10 +29,24 @@ body {
     align-items: center;
 }
 
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     width: 100vw;
     padding: 0px 100px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 .logo {
@@ -54,4 +68,137 @@ body {
 .link_item:hover {
     color: var(--color-dark);
     border-bottom: 3px solid var(--color-dark);
+}
+
+.hero {
+    width: 100vw;
+    margin-top: -50px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.leftcontainer h1 {
+    font-size: 48px;
+}
+
+.leftcontainer h2 {
+    font-size: 32px;
+    margin-top: -50px;
+}
+
+.right_container img {
+    width: 550px;
+}
+
+.btn_container button {
+    outline: none;
+    /* border: none; */
+    height: 50px;
+    width: 170px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.primary {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    border: none;
+}
+
+.primary:hover {
+    border: 1px solid var(--color-dark);
+    background: none;
+    color: var(--color-dark);
+}
+
+.secondary {
+    border: 1px solid var(--color-dark);
+    margin-left: 20px;
+    background: none;
+    color: var(--color-dark);
+}
+
+.secondary:hover {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    border: none;
+}
+
+.social_icon {
+    height: 32px;
+    width: 32px;
+    margin: 0px 10px;
+}
+
+.github {
+    background: url('../media/icons/github.png');
+    margin-left: 0px;
+}
+
+.github:hover {
+    background: url('../media/icons/github_blue.png');
+}
+
+.linkedin {
+    background: url('../media/icons/linkedin.png');
+}
+
+.linkedin:hover {
+    background: url('../media/icons/linkedin_blue.png');
+}
+
+.gmail {
+    background: url('../media/icons/gmail.png');
+}
+
+.gmail:hover {
+    background: url('../media/icons/gmail_blue.png');
+}
+
+.instagram {
+    background: url('../media/icons/instagram.png');
+}
+
+.instagram:hover {
+    background: url('../media/icons/instagram_blue.png');
+}
+
+.sc_container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.aboutme {
+    width: 100vw;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.aboutme h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    font-family: 'poppins-bold';
+}
+
+.ac {
+    width: 100%;
+}
+
+.ac img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imgc {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: var(--color-background);
 }

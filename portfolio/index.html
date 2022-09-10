@@ -8,6 +8,8 @@
     <title>Preetika | Web Developer</title>
     <link rel="stylesheet" href="./src/css/index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -19,11 +21,11 @@
             <img src="./src/media/preetika_logo.png" alt="logo">
         </div>
         <div class="links flex_evenly">
-            <div class="link_item">About</div>
-            <div class="link_item">Skills</div>
-            <div class="link_item">Eduction</div>
-            <div class="link_item">Projects</div>
-            <div class="link_item">Contact</div>
+            <div class="link_item about">About</div>
+            <div class="link_item skill">Skills</div>
+            <div class="link_item education_Btn">Eduction</div>
+            <div class="link_item project_Btn">Projects</div>
+            <div class="link_item contact_Btn">Contact</div>
         </div>
     </nav>
 
@@ -65,7 +67,7 @@
                 implementing and launching new projects. Looking to start the career as an entry-level
                 web Developer with a reputed firm driven by technology.
             </p>
-            <button>View My Projects</button>
+            <button class="vmp">View My Projects</button>
         </div>
         <img class="right_div" src="./src/media/girl.png" />
     </section>
@@ -173,7 +175,28 @@
     <!-- Contact Section -->
     <section class="contact flex_between">
         <h1 class="main_head"> Contact Me</h1>
+        <div class="cm_cont flex_center">
+            <img src="./src/media/footerObj.png" alt="">
+            <div class='ci_cont'>
+                <p>Got any awsome project idea? Feel free to reach me out</p>
+                <div class="sc_container flex_center">
+                    <a target="_blank" href="https://www.github.com/Preetikabhardwaj">
+                        <div class="social_icon github"></div>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/mwlite/in/preetika-bhardwaj-45aa89239">
+                        <div class="social_icon linkedin"></div>
+                    </a>
+                    <a target="_blank" href="mailto:preetikabhardwaj2001@gmail.com">
+                        <div class="social_icon gmail"></div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/preetika2506/?igshid=YmMyMTA2M2Y%3D">
+                        <div class="social_icon instagram"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>

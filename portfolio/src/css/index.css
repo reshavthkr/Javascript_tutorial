@@ -50,6 +50,14 @@ body {
     z-index: 2;
 }
 
+.mob_links {
+    display: none;
+}
+
+.menu_btn {
+    display: none;
+}
+
 .logo {
     width: 50%;
 }
@@ -441,4 +449,158 @@ section {
     width: 250px;
     opacity: .5;
     text-align: center;
+}
+
+@media only screen and (max-width:700px) {
+    .navbar {
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+
+    .menu_btn img {
+        width: 50px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .right_container {
+        display: none;
+    }
+
+    .hero {
+        padding: 0px;
+        margin-top: 0px;
+    }
+
+    .leftcontainer h1,
+    h2 {
+        text-align: center;
+    }
+
+    .btn_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sc_container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutme {
+        position: relative;
+        overflow-x: hidden;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+
+    }
+
+    .left_div {
+        margin-top: -280px;
+        margin-left: -50px;
+    }
+
+    .right_div {
+        position: absolute;
+        width: 400px;
+        bottom: 0px;
+    }
+
+    .skills_container {
+        width: 100vw;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px;
+    }
+
+    .skills_section img {
+        width: 50px;
+
+    }
+
+    .skill_item {
+        width: 150px;
+        height: 180px;
+    }
+
+    .edu_detail {
+        width: 100vw;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .edu_card {
+        width: 90vw;
+    }
+
+    .ei_con {
+        height: 80px;
+        width: 80px;
+    }
+
+    .edu_ico {
+        width: 40px;
+    }
+
+    .det {
+        margin-left: 20px;
+    }
+
+    .cc {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .cm_cont img {
+        display: none;
+    }
+
+    .mobl {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        z-index: 3;
+        background-color: var(--color-dark);
+        color: var(--color-text);
+        /* display: flex; */
+        padding: 0px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .mobl img {
+        width: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .mobl div {
+        font-size: 20px;
+        margin: 5px 0px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: 'poppins-bold';
+    }
+
 }

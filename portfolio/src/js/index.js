@@ -41,3 +41,11 @@ $('.primary').click(function () {
     },
         'slow');
 });
+const showMenu = () => {
+    var menu = document.getElementById("menu_container")
+    menu.style.display = 'flex'
+}
+const closeMenu = () => {
+    var menu = document.getElementById("menu_container")
+    menu.style.display = 'none'
+}

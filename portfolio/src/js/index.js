@@ -1,51 +1,31 @@
 
-$('.about').click(function () {
+const scrollToDiv = (toClass) => {
     $('html,body').animate({
-        scrollTop: $('.aboutme').offset().top
+        scrollTop: $('.' + toClass).offset().top
     },
         'slow');
-});
-$('.skill').click(function () {
-    $('html,body').animate({
-        scrollTop: $('.skills_section').offset().top
-    },
-        'slow');
-});
-$('.education_Btn').click(function () {
-    $('html,body').animate({
-        scrollTop: $('.education').offset().top
-    },
-        'slow');
-});
-$('.project_Btn').click(function () {
-    $('html,body').animate({
-        scrollTop: $('.project').offset().top
-    },
-        'slow');
-});
-$('.vmp').click(function () {
-    $('html,body').animate({
-        scrollTop: $('.project').offset().top
-    },
-        'slow');
-});
-$('.contact_Btn').click(function () {
-    $('html,body').animate({
-        scrollTop: $('.contact').offset().top
-    },
-        'slow');
-});
-$('.primary').click(function () {
-    $('html,body').animate({
-        scrollTop: $('.contact').offset().top
-    },
-        'slow');
-});
+}
+
 const showMenu = () => {
     var menu = document.getElementById("menu_container")
-    menu.style.display = 'flex'
+    var body = document.getElementById("body")
+    var overflow = document.getElementById("overflow")
+    menu.classList.toggle('active')
+    overflow.classList.toggle('active')
+    body.classList.toggle('no_scroll')
 }
-const closeMenu = () => {
+
+const scrollToMobDiv = (toClass) => {
+
     var menu = document.getElementById("menu_container")
-    menu.style.display = 'none'
+    var body = document.getElementById("body")
+    var overflow = document.getElementById("overflow")
+    menu.classList.toggle('active')
+    overflow.classList.toggle('active')
+    body.classList.toggle('no_scroll')
+
+    $('html,body').animate({
+        scrollTop: $('.' + toClass).offset().top
+    },
+        'slow');
 }

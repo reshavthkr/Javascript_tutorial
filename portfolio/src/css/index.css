@@ -6,6 +6,12 @@
     --color-text: #fff;
 }
 
+.text {
+    border-right: 2px solid var(--color-dark);
+    color: var(--color-dark);
+    padding-right: 5px;
+}
+
 
 @font-face {
     font-family: 'poppins';
@@ -86,13 +92,44 @@ body {
     box-sizing: border-box;
 }
 
+.leftcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .leftcontainer h1 {
     font-size: 48px;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+.my_head {
+    position: relative;
+}
+
+.my_head::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    animation: typing 4s steps(17) forwards, caret 1s infinite;
 }
 
 .leftcontainer h2 {
     font-size: 32px;
     margin-top: -50px;
+}
+
+.waving_hand {
+    animation: wave-animation 2.5s infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+
 }
 
 .right_container img {
@@ -482,9 +519,28 @@ section {
         margin-top: 0px;
     }
 
+    .leftcontainer {
+        width: 100vw;
+        align-items: center;
+    }
+
+    .leftcontainer h1 {
+        font-size: 30px;
+    }
+
+    .my_head::after {
+        animation: typing 4s steps(28) forwards, caret 1s infinite;
+    }
+
+
+
     .leftcontainer h1,
     h2 {
         text-align: center;
+    }
+
+    .leftcontainer h2 {
+        margin-top: -20px;
     }
 
     .btn_container {
@@ -603,4 +659,77 @@ section {
         font-family: 'poppins-bold';
     }
 
+    .left_div button {
+        z-index: 4;
+        position: relative;
+    }
+
+    .overflow {
+        position: absolute;
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(10, 11, 11, 0.9);
+        z-index: 2;
+    }
+
+
+    .active {
+        display: flex;
+    }
+
+
+    .no_scroll {
+        overflow-y: hidden;
+    }
+
+
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+@keyframes typing {
+    to {
+        width: 0;
+    }
+}
+
+@keyframes caret {
+    50% {
+        color: transparent;
+    }
 }

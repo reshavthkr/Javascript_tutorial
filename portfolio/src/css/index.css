@@ -660,7 +660,7 @@ section {
     }
 
     .left_div button {
-        z-index: 4;
+        z-index: 1;
         position: relative;
     }
 

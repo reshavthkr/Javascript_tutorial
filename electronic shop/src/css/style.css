@@ -1,0 +1,24 @@
+:root {
+    --color-primary: ##0484DF;
+    --color-secondary: ##1A9DDF;
+    --color-yellow: #FBD63E;
+    --color-text: #040404;
+}
+
+a {
+    letter-spacing: 2px;
+    color: var(--color-primary);
+}
+
+.diginav {
+    background-color: #E6F4F1;
+}
+
+.slick-div {
+    height: 500px;
+    width: 100vw;
+}
+
+.slick-div img {
+    object-fit: cover;
+}

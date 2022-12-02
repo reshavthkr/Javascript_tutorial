@@ -1,21 +1,11 @@
 function abc() {
-    // function block 
-    var a = 5
-    function def() {
-        // ----------------
-        var b = 2
-        console.log(a)
-
-        console.log("this is the value of b", b)
-        // ----------------------
-    }
+    var a = 10
     {
-        let vd = 9
-        console.log(vd)
+        let p = 20
+        console.log(p)
     }
-    console.log(vd)
-    def()
-    console.log(b)
-
+    console.log(p)
+    console.log(a)
 }
+
 abc()

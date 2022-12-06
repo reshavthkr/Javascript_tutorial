@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        input{
-            width: 200px;
-            height: 40px;
-            margin: 5px 0px;
-        }
-        button{
-            width: 200px;
-            height: 40px;
-            margin: 5px 0px;
-        }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      input {
+        width: 200px;
+        height: 40px;
+        margin: 5px 0px;
+      }
+      button {
+        width: 200px;
+        height: 40px;
+        margin: 5px 0px;
+      }
+      #messageDiv {
+        display: none;
+      }
+      #formDiv {
+        display: flex;
+        flex-direction: column;
+      }
     </style>
-</head>
-<body>
-    <input id="number1" placeholder="Enter first number"  type="number" />
-    <input id="number2" placeholder="Enter second number"  type="number" />
-    <button onclick="calSum()">Calculate Sum</button>
-    <div id="message"></div>
-    <script>
-        function calSum(){
-            let number1= document.getElementById("number1").value
-            let number2= document.getElementById("number2").value 
-            document.getElementById("number1").value=""
-            document.getElementById("number2").value=""
-            if(number1&&number2) {
-                let messageDiv= document.getElementById("message")    
-                let sum = +number1+(+number2)
-                let message= `The first number is ${number1}, the second number is ${number2} and their sum is ${sum}`
-                messageDiv.innerHTML= message
+  </head>
+  <body>
+    <div id="formDiv">
+      <input id="number1" placeholder="Enter first number" type="number" />
+      <input id="number2" placeholder="Enter second number" type="number" />
 
-            } 
-            else{
-                alert("Please fill all the fields")
-            } 
-            
+      <button onclick="calSum()">Calculate Sum</button>
+    </div>
+    <div id="message"></div>
+    <div id="messageDiv">
+      <div>First Number: <span id="fistNumber"></span></div>
+      <div>Second Number: <span id="secondNumber"></span></div>
+      <button onclick="fillAnother()">Fill another</button>
+    </div>
+
+    <script>
+      function calSum() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        // document.getElementById("number1").value=""
+        // document.getElementById("number2").value=""
+        if (number1 && number2) {
+          let messageDiv = document.getElementById("message");
+          let sum = +number1 + +number2;
+          let message = `The first number is ${number1}, the second number is ${number2} and their sum is ${sum}`;
+          messageDiv.innerHTML = message;
+          document.getElementById("messageDiv").style.display = "block";
+          document.getElementById("formDiv").style.display = "none";
+          document.getElementById("fistNumber").innerHTML = number1;
+          document.getElementById("secondNumber").innerHTML = number2;
+          let enteredNumber = {
+            firstNumber: number1,
+            secontNumber: number2,
+          };
+          console.log(enteredNumber);
+          let a = [];
+          a.push(number1);
+          a.push(number2);
+          console.log(a);
+        } else {
+          alert("Please fill all the fields");
         }
-        
+      }
+      function fillAnother() {
+        document.getElementById("messageDiv").style.display = "none";
+        document.getElementById("formDiv").style.display = "flex";
+      }
     </script>
-</body>
+  </body>
 </html>

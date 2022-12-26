@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="currdate" type="date" />
+    <button onclick="showDate()">show Date</button>
+    <script>
+      function showDate() {
+        var datekyahai = document.getElementById("currdate").value;
+        var monthValue = new Date(datekyahai).getMonth();
+        // 0-11
+        switch (monthValue) {
+          case 0:
+            flana.inneHtnl = "Month us";
+        }
+        console.log(monthValue);
+      }
+    </script>
+  </body>
+</html>

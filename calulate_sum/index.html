@@ -40,6 +40,7 @@
 
       <button onclick="calSum()">Calculate Sum</button>
     </div>
+    <div id="hii">0</div>
     <div id="message"></div>
     <div id="messageDiv">
       <div>First Number: <span id="fistNumber"></span></div>
@@ -50,7 +51,10 @@
     <script>
       function calSum() {
         let number1 = document.getElementById("number1").value;
+
         let number2 = document.getElementById("number2").value;
+        let hii = document.getElementById("hii").innerText;
+        console.log(typeof hii);
         // document.getElementById("number1").value=""
         // document.getElementById("number2").value=""
         if (number1 && number2) {
@@ -67,7 +71,7 @@
             secontNumber: number2,
           };
           console.log(enteredNumber);
-          let a = [];
+          let a = [number1, number2];
           a.push(number1);
           a.push(number2);
           console.log(a);

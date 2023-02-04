@@ -15,7 +15,8 @@
         let count = 1;
         let enteredNumber = document.getElementById("input").value;
         while (count <= enteredNumber) {
-          let para = (document.createElement("p").innerHTML = `Hello ${count}`);
+          let para = document.createElement("p");
+          para.innerHTML = `Hello ${count}`;
           document.getElementById("output").appendChild(para);
           count++;
         }

@@ -22,6 +22,8 @@ function showCount() {
         }
     }
     let newDiv = document.createElement("div")
-    newDiv.innerHTML = `Entered Numbers ara ${arr} out of which positive number is equal to ${positiveCount}, negative numbers is equal to ${negativeCount} and zeros is equal to ${zeroCount}`
+    newDiv.innerHTML = `Entered Numbers ara ${arr} out of which positive number is equal 
+                        to ${positiveCount}, negative numbers is equal to ${negativeCount} 
+                        and zeros is equal to ${zeroCount}`
     output.appendChild(newDiv)
 }

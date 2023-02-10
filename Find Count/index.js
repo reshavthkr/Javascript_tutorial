@@ -17,6 +17,7 @@ function showCount() {
         else if (arr[i] < 0) {
             negativeCount++
         }
+
         else {
             zeroCount++
         }

@@ -13,9 +13,6 @@ function generateRandomNo() {
     else if (enteredNumber < randomNumber) {
         newDiv.innerHTML = "Oops! Your guess too low"
     }
-    else {
-        newDiv.innerHTML = "Yeah! Your guess is correct"
-    }
     enteredNumberElement.value = ""
     outputDiv.appendChild(newDiv)
 }

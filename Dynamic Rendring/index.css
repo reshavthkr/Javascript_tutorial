@@ -1,0 +1,42 @@
+body{
+    padding: 0 ;
+    margin: 0;
+    width: 100vw;
+    background-color:  #f9f8f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -1px -2px 16px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.card img{
+    width: 100px;
+}
+.name{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.email{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+#mainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
